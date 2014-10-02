@@ -29,6 +29,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'settingslogic'
 gem 'dotenv-rails'
 
+#Authentication
+gem 'devise'
+#Authorization
+gem 'cancancan'
+
 group :development do
   gem 'spring'
   gem 'quiet_assets'
