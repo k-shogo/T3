@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Body:
+  = @declare.body
+%p
+  %b Description:
+  = @declare.description
+%p
+  %b User:
+  = @declare.user
+
+= link_to 'Edit', edit_declare_path(@declare)
+
+= link_to 'Back', declares_path
