@@ -4,7 +4,7 @@
   %tr
     %th Body
     %th Description
-    %th User
+    %th created at
     %th
     %th
     %th
@@ -13,7 +13,7 @@
     %tr
       %td= declare.body
       %td= declare.description
-      %td= declare.user
+      %td= declare.created_at
       %td= link_to 'Show', declare
       %td= link_to 'Edit', edit_declare_path(declare)
       %td= link_to 'Destroy', declare, :method => :delete, :data => { :confirm => 'Are you sure?' }
