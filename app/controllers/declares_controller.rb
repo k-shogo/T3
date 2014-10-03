@@ -6,7 +6,7 @@ class DeclaresController < ApplicationController
   # GET /declares
   # GET /declares.json
   def index
-    @declares = Declare.all
+    @declares = Declare.accessible_by(current_ability)
   end
 
   # GET /declares/1
